@@ -1,0 +1,259 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Lato&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap';
+
+html{
+    width: 100%;
+    height: 120rem;
+  
+}
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin:auto;
+   
+
+}
+
+
+main{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin:auto;
+}
+
+header{
+    background-color: ghostwhite;
+    width: 100%;
+    height: 6.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgb(207, 207, 207); 
+}
+
+/*imagens*/
+.background img{
+    width: 100%;
+    max-height: 90%;
+    position: absolute;
+    top: 6rem;
+}
+
+.logo img{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    float: center;
+    width: 13rem;
+    height: 7rem;
+    display: block;
+    background: no-repeat ;
+    z-index: 300;
+}
+
+.menu{
+    z-index: 800;
+    display: none;
+    width: 4rem;
+    height: 4rem;
+}
+
+#cod img{
+    width: 44rem;
+    height: 28rem;
+    padding-right: 6rem;
+    right:2rem;
+}
+
+.arrow{ 
+    position: absolute ;
+    bottom: 0.3rem;
+    right: 36rem;
+    font-size: 90px;
+    margin-right: auto;
+    margin: auto;
+   
+   
+    
+}
+
+#arrow-down  {
+    color: rgb(243, 247, 41);
+   
+    
+  
+}
+
+/*menu*/
+ul li a{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Josefin Sans';
+    color: rgb(133, 131, 131);
+    font-weight: bold;
+
+}
+ul li a:hover{
+    color: rgb(230, 208, 113);
+    text-decoration: none; 
+}
+
+nav{
+    float: right;
+    padding: 1.5rem;
+                                     
+}
+
+li{
+    display: inline-block;
+    float: left;
+    padding: 0.9rem;
+}
+
+
+/*edicao_de_texto*/
+#selected{
+    color: darkred;
+}
+
+.conteudo{
+    position: relative;
+    font-family: 'josefin sans';
+    font-size: 1.5rem;
+    top:50rem;
+    color:rgb(133, 131, 131);
+    text-align: justify;
+   
+}
+
+#titulo{
+    text-align: center;
+
+    color: black;
+}
+#subtitulo{
+    text-align: center;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color:rgb(133, 131, 131);
+}
+#bonus-text{
+    margin-left: 2rem;
+}   
+#cod img{
+    margin-left: 7rem;
+}
+
+
+/*responsividade*/
+@media only screen and (max-width: 1000px){
+
+    header{
+        background-color: ghostwhite;
+        width: 100%;
+        height: 14rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        border-bottom: 1px solid rgb(207, 207, 207); 
+    }
+    nav ul, nav:active ul{
+        display: none;
+        position: absolute;
+        padding: 4rem;
+        left: 2rem;
+        top: 12rem;
+        box-shadow: 0px 2px 4px rgb(19, 19, 18);
+        background-color: ghostwhite;
+        color:black;
+
+
+        
+    }
+    li{
+        text-align: center;
+        width: 100%;
+        padding: 1.1rem 0;
+        margin: 0;
+        font-size: 2.2rem;
+    }
+    nav:hover ul{
+        display: block;
+    }
+
+    .background img{
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        top: 12rem;
+    }
+
+    .menu{
+        display: inline-block;
+        z-index: 900;
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        top: 8rem;
+        right: -1.5rem;
+        color: black;
+    }
+   
+
+
+
+    .logo img{
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-right: 2.5rem;
+        width: 18rem;
+        height: 12rem;
+    }
+    .arrow{
+     display: none;
+     
+    }
+        
+
+    #titulo{
+        text-align: center;
+        padding-left: 1.5rem;
+        font-size: 4.5rem;
+        color: black;
+    }
+
+    #subtitulo{
+        font-size: 2.8rem;
+    }
+    
+
+    #bonus-text{
+        text-align: center;
+        float:center;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #cod img{
+        text-align: center;
+        margin-left: 3rem;
+    }
+    
+    .conteudo{
+        margin-top: 30rem;
+        font-size: 3rem;
+        color:rgb(133, 131, 131);
+    
+    }
+  
+
+    }
